@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("image.png");
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+        }
+        #navbar{
+            height: 150px;
+
+            border: solid white 1.5px;
+            background-color: rgba(0, 0, 0,0.1);
+        }
+        #flex{
+            display: flex;
+        }
+        .ulf{
+            display: flex;
+        }
+         .lif{
+             
+              padding:12px 50px;
+              font-size: 25px;
+        }
+       #navbar ul li{
+            text-decoration: none;
+            list-style: none;
+           
+        }
+        #navbar ul li a{
+            text-decoration: none;
+        }
+        #btn{
+            float: right;
+            padding:33px 130px;
+            
+            
+        }
+        .n1{
+            padding: 0px 5px;
+           
+            
+        }
+        .h_1{
+            position: absolute;
+            top: 151px;
+    left: 390px;
+            font-size: 50px;
+            color: transparent;
+            -webkit-text-stroke: 1px rgb(27, 43, 117);
+       background: url(meal.jpg);
+            -webkit-background-clip:  text;
+        background-position: 0 0;
+        animation: back 20s linear infinite;
+        }
+        #p_lay{
+            font-size: 150%;
+            position: absolute;
+            top: 290px;
+            left: 695px;
+            color: transparent;
+            -webkit-text-stroke: 1px rgb(27, 43, 117);
+       background: url(meal.jpg);
+            -webkit-background-clip:  text;
+        background-position: 0 0;
+        animation: back 20s linear infinite;
+        }
+        #play{
+            position: absolute;
+            top: 327px;
+            left: 704px;
+        }
+        @keyframes back {
+            100%{
+                background-position: 2000px 0;
+            }
+            
+        }
+        .control{
+
+        }
+
+
+    </style>
+</head>
+<body>
+   <div id="navbar"> <div id="flex">
+    <div id="logo"><img src="logo.png" alt=""></div>
+    
+   
+
+
+<ul class="ulf">
+    <li class="lif"><a href="#fhkjah">MENU</a></li>
+    <li class="lif"><a href="#fhkjah">HOME</a></li>
+    <li class="lif"><a href="#fhkjah">PLAY LIST</a></li>
+    <li class="lif"><a href="#fhkjah">CONTUCT US</a></li>
+</ul>
+<div id="btn">
+    <button class="n1">sign up</button>
+    <button class="n1">Rgister</button>
+</div>
+    
+</button>
+</div>
+</div>
+<h1 class="h_1">!!!  LOVE THE SOUND OF JOY  !!!</h1>
+</body>
+<div class="cntrol">
+    <img src="play.png" alt="" id="play">
+    <h1 id="p_lay"> PLAY SONG </h1>
+</div>
+<audio src="radha.mp3" id="mysong" type="audio/mp3"></audio>
+<script>var mysong=document.getElementById("mysong");
+var icon=document.getElementById("play");
+play.onclick=function(){
+    if(mysong.paused){
+    
+        console.log(2);
+    mysong.play();
+    play.src="play.png"}
+    else{
+        mysong.pause();
+        play.src="pause.png";
+    }
+}
+</script>
+</html>
